@@ -1,0 +1,18 @@
+<svg width="960" height="1120" viewBox="0 0 960 1120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="1120" rx="72" fill="#FFF8F1"/>
+  <rect x="22" y="22" width="916" height="1076" rx="56" fill="#F8EDD8"/>
+  <circle cx="770" cy="228" r="150" fill="#BAEDE2" opacity="0.72"/>
+  <circle cx="206" cy="260" r="180" fill="#FE9D7C" opacity="0.34"/>
+  <circle cx="522" cy="920" r="232" fill="#FFD97D" opacity="0.28"/>
+  <path d="M202 922C202 772.865 322.865 652 472 652H488C637.135 652 758 772.865 758 922V956H202V922Z" fill="#EEDFC5"/>
+  <circle cx="480" cy="418" r="168" fill="#F1E3CA"/>
+  <circle cx="480" cy="402" r="132" fill="#FFF7F0"/>
+  <path d="M360 378C360 307.323 417.323 250 488 250C558.677 250 616 307.323 616 378V430H360V378Z" fill="#95492E"/>
+  <path d="M426 670H534" stroke="#95492E" stroke-width="12" stroke-linecap="round"/>
+  <path d="M138 154H550" stroke="#BDB19A" stroke-width="2"/>
+  <text x="138" y="122" fill="#765B07" font-family="&quot;Plus Jakarta Sans&quot;, Arial, sans-serif" font-size="42" font-weight="700">Warm Editorial Portrait</text>
+  <text x="138" y="196" fill="#675E4B" font-family="&quot;Be Vietnam Pro&quot;, Arial, sans-serif" font-size="28" font-weight="500">Replace this illustration with your own photo later</text>
+  <rect x="132" y="846" width="224" height="70" rx="35" fill="#FFF8F1"/>
+  <text x="172" y="891" fill="#95492E" font-family="&quot;Be Vietnam Pro&quot;, Arial, sans-serif" font-size="28" font-weight="600">Nafiz Imtiaz</text>
+  <defs/>
+</svg>

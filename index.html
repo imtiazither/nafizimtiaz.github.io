@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nafiz Imtiaz | Personal Website</title>
+    <meta
+      name="description"
+      content="Nafiz Imtiaz is an AI researcher and applied data scientist focused on Educational Data Mining, learning analytics, fairness-aware machine learning, and transparent decision-support systems."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="sticker-sprite" aria-hidden="true" width="0" height="0" focusable="false">
+      <defs>
+        <symbol id="sticker-spark" viewBox="0 0 24 24">
+          <path d="M12 3v3"></path>
+          <path d="M5 8l2 1.3"></path>
+          <path d="M19 8l-2 1.3"></path>
+          <path d="M4 14h3"></path>
+          <path d="M20 14h-3"></path>
+          <path d="m7 19 2-1.3"></path>
+          <path d="m17 19-2-1.3"></path>
+          <circle cx="12" cy="14" r="2.3"></circle>
+        </symbol>
+        <symbol id="sticker-open-book" viewBox="0 0 24 24">
+          <path d="M4 7c2.1-1.3 4.5-1.8 7.1-1.6.9.1 1.5.7 1.5 1.6v10.7c-2.1-1-4.5-1.3-7.1-.8-.9.2-1.5.9-1.5 1.8z"></path>
+          <path d="M20 7c-2.1-1.3-4.5-1.8-7.1-1.6-.9.1-1.5.7-1.5 1.6v10.7c2.1-1 4.5-1.3 7.1-.8.9.2 1.5.9 1.5 1.8z"></path>
+        </symbol>
+        <symbol id="sticker-closed-book" viewBox="0 0 24 24">
+          <path d="M7 5.2h8.7a1.8 1.8 0 0 1 1.8 1.8v11.8H8.8A1.8 1.8 0 0 0 7 20.6z"></path>
+          <path d="M7 5.2v15.4"></path>
+          <path d="M9.5 8.4h5.3"></path>
+          <path d="M9.5 11.2h4.4"></path>
+        </symbol>
+        <symbol id="sticker-pen" viewBox="0 0 24 24">
+          <path d="m4 20 4.4-1 9.1-9.1-3.3-3.3-9.1 9.1z"></path>
+          <path d="m12.8 6.9 3.3 3.3"></path>
+        </symbol>
+        <symbol id="sticker-laptop" viewBox="0 0 24 24">
+          <rect x="5.5" y="5.5" width="13" height="8.8" rx="1.4"></rect>
+          <path d="M3.5 18h17"></path>
+          <path d="m6 18 1.1 2h9.8l1.1-2"></path>
+        </symbol>
+        <symbol id="sticker-monitor" viewBox="0 0 24 24">
+          <rect x="4.5" y="5" width="15" height="10.5" rx="1.5"></rect>
+          <path d="M10 19h4"></path>
+          <path d="M12 15.5V19"></path>
+        </symbol>
+        <symbol id="sticker-notebook" viewBox="0 0 24 24">
+          <rect x="6.2" y="5.4" width="11.6" height="13.6" rx="1.5"></rect>
+          <path d="M9 5.4v13.6"></path>
+          <path d="M7.5 8h1.5"></path>
+          <path d="M7.5 11.3h1.5"></path>
+          <path d="M7.5 14.6h1.5"></path>
+          <path d="M11.2 9h4.2"></path>
+          <path d="M11.2 12h4.2"></path>
+        </symbol>
+        <symbol id="sticker-bookmark" viewBox="0 0 24 24">
+          <path d="M8 4.8h8a1.5 1.5 0 0 1 1.5 1.5V19l-5.5-3.2L6.5 19V6.3A1.5 1.5 0 0 1 8 4.8z"></path>
+          <path d="M9.8 8.2h4.4"></path>
+        </symbol>
+      </defs>
+    </svg>
+    <div class="ambient ambient--peach" aria-hidden="true"></div>
+    <div class="ambient ambient--sage" aria-hidden="true"></div>
+    <div class="ambient ambient--gold" aria-hidden="true"></div>
+
+    <div class="page-rail" aria-hidden="true">
+      <span class="page-rail__track"></span>
+      <span class="page-rail__fill"></span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand__text">Nafiz Imtiaz</span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="site-nav" id="site-nav">
+          <a href="#about">About</a>
+          <a href="#future">Future</a>
+          <a href="#journey">Journey</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Switch to dark mode"
+        >
+          <span class="theme-toggle__track" aria-hidden="true">
+            <span class="theme-toggle__stars">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="theme-toggle__cloud theme-toggle__cloud--one"></span>
+            <span class="theme-toggle__cloud theme-toggle__cloud--two"></span>
+            <span class="theme-toggle__thumb"></span>
+          </span>
+          <span class="theme-toggle__label">Dark mode</span>
+        </button>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="section hero" id="home">
+        <div class="shell hero__shell">
+          <div class="section-stickers section-stickers--hero" aria-hidden="true">
+            <span class="sticker sticker--gold sticker--md sticker--hero-spark"><svg viewBox="0 0 24 24"><use href="#sticker-spark"></use></svg></span>
+            <span class="sticker sticker--sage sticker--sm sticker--hero-open"><svg viewBox="0 0 24 24"><use href="#sticker-open-book"></use></svg></span>
+            <span class="sticker sticker--peach sticker--sm sticker--hero-notebook"><svg viewBox="0 0 24 24"><use href="#sticker-notebook"></use></svg></span>
+            <span class="sticker sticker--gold sticker--sm sticker--hero-closed"><svg viewBox="0 0 24 24"><use href="#sticker-closed-book"></use></svg></span>
+            <span class="sticker sticker--sage sticker--sm sticker--hero-bookmark"><svg viewBox="0 0 24 24"><use href="#sticker-bookmark"></use></svg></span>
+          </div>
+          <div class="hero__copy reveal">
+            <p class="eyebrow">Queens, NY · AI Researcher &amp; Applied Data Scientist</p>
+            <h1>Hi, I&apos;m Nafiz Imtiaz.</h1>
+            <p class="hero__lead">
+              Published researcher with a Best Paper Award at IEEE CS BDC Symposium 2024
+              and an M.S. in Business Analytics from Montclair State University
+              (GPA 3.91). My work spans Educational Data Mining, fairness-aware machine
+              learning, adaptive learning, and applied analytics for real-world teams.
+            </p>
+
+            <div class="hero__actions">
+              <a class="button button--primary" href="#journey">Read the journey</a>
+              <a class="button button--secondary" href="#work">See selected work</a>
+              <button
+                class="resume-button"
+                type="button"
+                data-resume-open
+                aria-haspopup="dialog"
+                aria-controls="resume-modal"
+              >
+                <span class="resume-button__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M7 4.5h7.4l3.6 3.6v11.4a1.5 1.5 0 0 1-1.5 1.5H7a1.5 1.5 0 0 1-1.5-1.5V6A1.5 1.5 0 0 1 7 4.5z"></path>
+                    <path d="M14.4 4.5V8h3.6"></path>
+                    <path d="M8.8 11.2h5.8"></path>
+                    <path d="M8.8 14.1h5.8"></path>
+                    <path d="M8.8 17h4.2"></path>
+                  </svg>
+                </span>
+                <span class="resume-button__copy">
+                  <span class="resume-button__eyebrow">Preview</span>
+                  <span class="resume-button__title">Resume</span>
+                </span>
+              </button>
+              <a class="button button--ghost" href="#contact">Say hello</a>
+            </div>
+
+            <div class="hero__ribbon">
+              <span>Educational Data Mining</span>
+              <span>Learning Analytics</span>
+              <span>Business Analytics</span>
+            </div>
+          </div>
+
+          <aside class="hero__panel reveal" data-parallax>
+            <div class="hero-portrait">
+              <div class="hero-portrait__card" aria-hidden="true"></div>
+              <img
+                class="hero-portrait__image"
+                src="assets/nafiz-portrait.png"
+                alt="Portrait of Nafiz Imtiaz"
+              />
+            </div>
+          </aside>
+        </div>
+
+        <a class="scroll-prompt" href="#about" aria-label="Scroll to the About section">
+          <span>Scroll</span>
+          <span class="scroll-prompt__line"></span>
+        </a>
+      </section>
+
+      <section class="section section--soft" id="about">
+        <div class="shell editorial">
+          <div class="section-stickers section-stickers--about" aria-hidden="true">
+            <span class="sticker sticker--peach sticker--sm sticker--about-pen"><svg viewBox="0 0 24 24"><use href="#sticker-pen"></use></svg></span>
+            <span class="sticker sticker--gold sticker--sm sticker--about-closed"><svg viewBox="0 0 24 24"><use href="#sticker-closed-book"></use></svg></span>
+            <span class="sticker sticker--sage sticker--sm sticker--about-bookmark"><svg viewBox="0 0 24 24"><use href="#sticker-bookmark"></use></svg></span>
+            <span class="sticker sticker--gold sticker--sm sticker--about-laptop"><svg viewBox="0 0 24 24"><use href="#sticker-laptop"></use></svg></span>
+            <span class="sticker sticker--peach sticker--sm sticker--about-spark"><svg viewBox="0 0 24 24"><use href="#sticker-spark"></use></svg></span>
+          </div>
+          <div class="section-heading reveal">
+            <p class="eyebrow">About</p>
+            <h2>Research, analytics, and product work grounded in real educational and business systems.</h2>
+          </div>
+
+          <div class="about-layout">
+            <article class="paper paper--story reveal">
+              <p>
+                I am an AI researcher and applied data scientist specializing in
+                Educational Data Mining, learning analytics, and fairness-aware machine
+                learning. My work focuses on building open-source, equity-centered
+                tools, including digital biomarkers for early screening of learning
+                disabilities and transparent Early Warning Systems.
+              </p>
+              <p>
+                Alongside research, I have worked across business analysis, adaptive
+                learning product development, teaching, curriculum support, and data
+                storytelling in both the United States and Bangladesh. That mix has
+                shaped how I approach data: not only as modeling and prediction, but as
+                something that must stay useful, interpretable, and people-centered.
+              </p>
+            </article>
+
+            <aside class="paper paper--aside reveal">
+              <p class="paper__label">Education</p>
+              <ul class="soft-list">
+                <li>M.S. in Business Analytics, Montclair State University, Montclair, NJ · GPA 3.91</li>
+                <li>B.B.A. in Management Information System (MIS), North South University, Dhaka, Bangladesh</li>
+                <li>Published researcher across education, process optimization, and business analytics</li>
+              </ul>
+            </aside>
+
+            <div class="paper paper--chips reveal">
+              <div class="chip-row">
+                <span class="chip">Educational Data Mining</span>
+                <span class="chip">Learning Analytics</span>
+                <span class="chip">Fairness-Aware ML</span>
+                <span class="chip">Early Warning Systems</span>
+                <span class="chip">Predictive Modeling</span>
+                <span class="chip">SQL</span>
+                <span class="chip">Data Visualization</span>
+                <span class="chip">Adaptive Learning</span>
+                <span class="chip">Open-Source Research</span>
+                <span class="chip">Predictive analytics</span>
+                <span class="chip">Data storytelling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="future">
+        <div class="shell">
+          <div class="section-stickers section-stickers--future" aria-hidden="true">
+            <span class="sticker sticker--gold sticker--sm sticker--future-laptop"><svg viewBox="0 0 24 24"><use href="#sticker-laptop"></use></svg></span>
+            <span class="sticker sticker--sage sticker--sm sticker--future-monitor"><svg viewBox="0 0 24 24"><use href="#sticker-monitor"></use></svg></span>
+            <span class="sticker sticker--peach sticker--sm sticker--future-spark"><svg viewBox="0 0 24 24"><use href="#sticker-spark"></use></svg></span>
+            <span class="sticker sticker--sage sticker--sm sticker--future-open"><svg viewBox="0 0 24 24"><use href="#sticker-open-book"></use></svg></span>
+            <span class="sticker sticker--gold sticker--sm sticker--future-bookmark"><svg viewBox="0 0 24 24"><use href="#sticker-bookmark"></use></svg></span>
+          </div>
+          <div class="section-heading reveal">
+            <p class="eyebrow">Future</p>
+            <h2>The next chapter is already visible in the research directions I am building toward.</h2>
+            <p>
+              These themes already run through my CV and current work: adaptive
+              learning, transparent decision-support systems, and equity-centered uses
+              of AI in education and analytics.
+            </p>
+          </div>
+
+          <div class="future-grid">
+            <article class="paper future-card reveal">
+              <p class="future-card__index">01</p>
+              <h3>Digital biomarkers for early screening</h3>
+              <p>
+                Exploring digital biomarkers and learning signals that can support
+                earlier screening for learning disabilities through responsible,
+                evidence-based modeling.
+              </p>
+            </article>
+
+            <article class="paper future-card reveal">
+              <p class="future-card__index">02</p>
+              <h3>Transparent Early Warning Systems</h3>
+              <p>
+                Designing interpretable Early Warning Systems for education settings,
+                with a focus on fairness, trust, and meaningful support rather than
+                opaque prediction alone.
+              </p>
+            </article>
+
+            <article class="paper future-card reveal">
+              <p class="future-card__index">03</p>
+              <h3>Open-source learning analytics tools</h3>
+              <p>
+                Developing equity-centered, open-source tools that connect research in
+                Educational Data Mining with practical support for students, educators,
+                and institutions.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--deep" id="journey">
+        <div class="shell">
+          <div class="section-stickers section-stickers--journey" aria-hidden="true">
+            <span class="sticker sticker--gold sticker--sm sticker--journey-pen"><svg viewBox="0 0 24 24"><use href="#sticker-pen"></use></svg></span>
+            <span class="sticker sticker--sage sticker--sm sticker--journey-book"><svg viewBox="0 0 24 24"><use href="#sticker-open-book"></use></svg></span>
+            <span class="sticker sticker--peach sticker--sm sticker--journey-monitor"><svg viewBox="0 0 24 24"><use href="#sticker-monitor"></use></svg></span>
+            <span class="sticker sticker--gold sticker--sm sticker--journey-notebook"><svg viewBox="0 0 24 24"><use href="#sticker-notebook"></use></svg></span>
+            <span class="sticker sticker--sage sticker--sm sticker--journey-spark"><svg viewBox="0 0 24 24"><use href="#sticker-spark"></use></svg></span>
+          </div>
+          <div class="section-heading reveal">
+            <p class="eyebrow">Journey</p>
+            <h2>Work experience, told as a moving line through the roles that shaped my practice.</h2>
+          </div>
+
+          <div class="journey">
+            <div class="journey__line" aria-hidden="true">
+              <span class="journey__line-fill"></span>
+              <span class="journey__walker journey__walker--left">
+                <img
+                  class="journey__walker-frame journey__walker-frame--left"
+                  src="assets/animation-left.png"
+                  alt=""
+                  decoding="sync"
+                  loading="eager"
+                />
+                <img
+                  class="journey__walker-frame journey__walker-frame--right"
+                  src="assets/animation-right.png"
+                  alt=""
+                  decoding="sync"
+                  loading="eager"
+                />
+              </span>
+            </div>
+
+            <article class="journey-item reveal">
+              <div class="journey-item__meta">
+                <span>January 2019 – March 2022</span>
+                <strong>Project Research Assistant · BacBon Limited</strong>
+              </div>
+              <span class="journey-item__point" aria-hidden="true"></span>
+              <div class="paper journey-item__body">
+                <h3>Platform development, curriculum work, and teaching</h3>
+                <p>
+                  At BacBon Limited in Dhaka, I collaborated with agile software teams
+                  to help develop and improve BacBon School and BacBon Tutors, with a
+                  hands-on focus on platform performance and user experience. I also
+                  worked on Math and English materials with the Asian Development Bank,
+                  taught English remotely to Japanese high school students through the
+                  SLC platform in collaboration with Shinkoshuppansha Keirinkan Co.,
+                  Ltd., and supported marketing strategy and content review.
+                </p>
+              </div>
+            </article>
+
+            <article class="journey-item reveal">
+              <div class="journey-item__meta">
+                <span>February 2025 – October 2025</span>
+                <strong>Consultant Business Analyst · NetCom Learning Global</strong>
+              </div>
+              <span class="journey-item__point" aria-hidden="true"></span>
+              <div class="paper journey-item__body">
+                <h3>Adaptive learning product work and market analysis</h3>
+                <p>
+                  At NetCom Learning Global in Manhattan, I developed visualizations for
+                  operations, sales, and stakeholder requirements, analyzed marketing
+                  datasets and documents through Excel pivot tables and dashboards, and
+                  consulted with local professionals to identify trigger points and
+                  shape customized learning solutions.
+                </p>
+              </div>
+            </article>
+
+            <article class="journey-item reveal">
+              <div class="journey-item__meta">
+                <span>October 2025 – February 2026</span>
+                <strong>Business Analyst · DCITM LLC</strong>
+              </div>
+              <span class="journey-item__point" aria-hidden="true"></span>
+              <div class="paper journey-item__body">
+                <h3>AI automation, workflows, and agentic AI research</h3>
+                <p>
+                  At DCITM in Richmond, Virginia, I supported product launches by
+                  gathering requirements, preparing reports, and assisting with
+                  documentation and workflow evaluation. I also contributed to internal
+                  AI automation for data stacking and organization, and researched
+                  agentic AI architectures for automated decision-making pipelines.
+                </p>
+              </div>
+            </article>
+
+            <article class="journey-item reveal">
+              <div class="journey-item__meta">
+                <span>February 2026 – Present</span>
+                <strong>Business Analyst · Bits and Binaries, Inc.</strong>
+              </div>
+              <span class="journey-item__point" aria-hidden="true"></span>
+              <div class="paper journey-item__body">
+                <h3>Local LLM tools, SQL pipelines, and reporting validation</h3>
+                <p>
+                  At Bits and Binaries in Irving, Texas, I help brainstorm and build
+                  customer-centric local LLM tools for forecasting sales and reducing
+                  lost customers. I also develop complex SQL queries across relational
+                  data sources, gather analytics requirements with stakeholders, and
+                  support UAT by validating data logic and resolving reporting issues.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="work">
+        <div class="shell">
+          <div class="section-stickers section-stickers--work" aria-hidden="true">
+            <span class="sticker sticker--sage sticker--sm sticker--work-open"><svg viewBox="0 0 24 24"><use href="#sticker-open-book"></use></svg></span>
+            <span class="sticker sticker--gold sticker--sm sticker--work-notebook"><svg viewBox="0 0 24 24"><use href="#sticker-notebook"></use></svg></span>
+            <span class="sticker sticker--peach sticker--sm sticker--work-closed"><svg viewBox="0 0 24 24"><use href="#sticker-closed-book"></use></svg></span>
+            <span class="sticker sticker--peach sticker--sm sticker--work-pen"><svg viewBox="0 0 24 24"><use href="#sticker-pen"></use></svg></span>
+            <span class="sticker sticker--gold sticker--sm sticker--work-laptop"><svg viewBox="0 0 24 24"><use href="#sticker-laptop"></use></svg></span>
+          </div>
+          <div class="section-heading reveal">
+            <p class="eyebrow">Work</p>
+            <h2>Projects, publications, recognition, and leadership collected in one place.</h2>
+          </div>
+
+          <div class="work-grid">
+            <article class="paper work-card work-card--tall reveal">
+              <p class="paper__label">Publications</p>
+              <h3>Peer-reviewed work across education and analytics</h3>
+              <ul class="soft-list">
+                <li>Data-Driven Dashboards for Enhancing Investor Reporting Transparency in American Capital Markets (2026)</li>
+                <li>Leveraging AI for Data-Driven Decision Making and Automation in the USA Education Sector (2025)</li>
+                <li>Transforming Business Analytics: The Impact of Machine Learning on Performance Prediction in US Financial Sectors (2025)</li>
+                <li>Embracing Data-Driven Process Optimization to Highly Transform Instructional Administration in Higher Education Institutions (2023)</li>
+                <li>Overcoming Data Excess to Improve Decision-Making and Information Systems Plans for Organizational Performance (2020)</li>
+              </ul>
+              <p>
+                Google Scholar:
+                <a href="https://scholar.google.com/citations?user=1Bub0coAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">View profile</a>
+              </p>
+            </article>
+
+            <article class="paper work-card work-card--wide reveal">
+              <p class="paper__label">Academic Project</p>
+              <h3>Simulation-Based Adaptive Learning Analytics Framework</h3>
+              <p>
+                Developed and documented a simulation-based ALA framework in April 2025
+                using secondary datasets and computational modeling of community-college
+                enrollment scenarios in collaboration with Illinois State University.
+              </p>
+              <p>
+                Using logistic regression, random forest, and gradient boosting, the
+                project projected an 18% increase in completion, a 15% increase in
+                retention, and a 12% improvement in workforce-readiness alignment when
+                compared with static curricula.
+              </p>
+            </article>
+
+            <article class="paper work-card reveal">
+              <p class="paper__label">Process Mining</p>
+              <h3>Celonis process redesign project</h3>
+              <p>
+                In December 2024, I worked on a team-based Celonis project to analyze
+                and redesign a complex business process, identify structural
+                inefficiencies, enable concurrency, and improve workflows. I also
+                completed the Celonis Academy certification in Academic Process Mining
+                Fundamentals.
+              </p>
+            </article>
+
+            <article class="paper work-card reveal">
+              <p class="paper__label">Recognition</p>
+              <h3>Best Paper Award and international leadership</h3>
+              <p>
+                My paper “Optimizing Stroke Prediction Models for Real-World
+                Application: Tackling Data Imbalance Without Synthetic Samples”
+                received the Best Paper Award at the IEEE CS BDC Symposium 2024 in
+                Dhaka. Earlier, I represented Bangladesh in Tokyo as a LAMP young
+                leader, working on socio-economic and entrepreneurial challenges.
+              </p>
+            </article>
+
+            <article class="paper work-card work-card--quote reveal">
+              <p class="paper__label">Research focus</p>
+              <blockquote>
+                Developing open-source, equity-centered tools, including digital
+                biomarkers for early screening of learning disabilities and transparent
+                Early Warning Systems.
+              </blockquote>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="shell contact-layout">
+          <div class="section-stickers section-stickers--contact" aria-hidden="true">
+            <span class="sticker sticker--gold sticker--sm sticker--contact-bookmark"><svg viewBox="0 0 24 24"><use href="#sticker-bookmark"></use></svg></span>
+            <span class="sticker sticker--peach sticker--sm sticker--contact-pen"><svg viewBox="0 0 24 24"><use href="#sticker-pen"></use></svg></span>
+            <span class="sticker sticker--sage sticker--sm sticker--contact-laptop"><svg viewBox="0 0 24 24"><use href="#sticker-laptop"></use></svg></span>
+            <span class="sticker sticker--sage sticker--sm sticker--contact-open"><svg viewBox="0 0 24 24"><use href="#sticker-open-book"></use></svg></span>
+            <span class="sticker sticker--gold sticker--sm sticker--contact-spark"><svg viewBox="0 0 24 24"><use href="#sticker-spark"></use></svg></span>
+          </div>
+          <div class="section-heading reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Reach out by email and say Hi, or find me through my academic and professional profiles.</h2>
+            <p>
+              For research collaborations, analytics work, or academic conversations,
+              the easiest way to contact me is by email.
+            </p>
+          </div>
+
+          <div class="contact-stack">
+            <div class="paper contact-paper reveal">
+              <p class="paper__label">Email</p>
+              <p class="contact-paper__lead">
+                Personal:
+                <a href="mailto:imtiazither@gmail.com">imtiazither@gmail.com</a>
+              </p>
+              <p class="contact-paper__lead">
+                University:
+                <a href="mailto:imtiazn1@montclair.edu">imtiazn1@montclair.edu</a>
+              </p>
+              <div class="profile-links" aria-label="Profile links">
+                <a
+                  class="profile-link"
+                  href="https://orcid.org/0009-0000-2032-297X"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open ORCID profile"
+                  title="ORCID"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <text x="12" y="15.4" text-anchor="middle">iD</text>
+                  </svg>
+                </a>
+                <a
+                  class="profile-link"
+                  href="https://www.linkedin.com/in/nafiz-imtiaz-509142155/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open LinkedIn profile"
+                  title="LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6.7 8.8A1.6 1.6 0 1 1 6.7 5.6a1.6 1.6 0 0 1 0 3.2zm-1.4 1.5h2.8v8.1H5.3zm4.6 0h2.7v1.1h.1c.4-.7 1.4-1.4 2.8-1.4 3 0 3.5 2 3.5 4.5v3.9h-2.8v-3.5c0-.8 0-1.9-1.2-1.9s-1.3.9-1.3 1.8v3.6H9.9z"></path>
+                  </svg>
+                </a>
+                <a
+                  class="profile-link"
+                  href="https://scholar.google.com/citations?user=1Bub0coAAAAJ&amp;hl=en"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open Google Scholar profile"
+                  title="Google Scholar"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m12 4 9 5-9 5-9-5zm-5.8 7.3V15c0 2 2.6 3.7 5.8 3.7s5.8-1.7 5.8-3.7v-3.7L12 14.5z"></path>
+                    <circle cx="12" cy="11.5" r="2.1"></circle>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <button
+              class="resume-button resume-button--footer reveal"
+              type="button"
+              data-resume-open
+              aria-haspopup="dialog"
+              aria-controls="resume-modal"
+            >
+              <span class="resume-button__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M7 4.5h7.4l3.6 3.6v11.4a1.5 1.5 0 0 1-1.5 1.5H7a1.5 1.5 0 0 1-1.5-1.5V6A1.5 1.5 0 0 1 7 4.5z"></path>
+                  <path d="M14.4 4.5V8h3.6"></path>
+                  <path d="M8.8 11.2h5.8"></path>
+                  <path d="M8.8 14.1h5.8"></path>
+                  <path d="M8.8 17h4.2"></path>
+                </svg>
+              </span>
+              <span class="resume-button__copy">
+                <span class="resume-button__eyebrow">Preview</span>
+                <span class="resume-button__title">Resume</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="resume-modal" id="resume-modal" hidden>
+      <div class="resume-modal__backdrop" data-resume-close></div>
+      <div
+        class="resume-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="resume-modal-title"
+      >
+        <div class="resume-modal__header">
+          <div>
+            <p class="eyebrow">Resume Preview</p>
+            <h2 id="resume-modal-title">Nafiz Imtiaz CV</h2>
+          </div>
+
+          <div class="resume-modal__actions">
+            <a class="resume-modal__download" href="assets/nafiz-imtiaz-resume.pdf" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4.5v9"></path>
+                <path d="m8.7 10.8 3.3 3.3 3.3-3.3"></path>
+                <path d="M5.5 18.5h13"></path>
+              </svg>
+              <span>Download .pdf</span>
+            </a>
+            <button class="resume-modal__close" type="button" data-resume-close aria-label="Close resume preview">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m7 7 10 10"></path>
+                <path d="M17 7 7 17"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="resume-modal__scroll">
+          <article class="resume-sheet">
+            <header class="resume-sheet__header">
+              <div>
+                <h3>Nafiz Imtiaz</h3>
+                <p>Queens, NY</p>
+              </div>
+              <div class="resume-sheet__meta">
+                <p>Mailing Address: 9114 121st St., Richmond Hill, NY - 11418</p>
+                <p>Cell: (+1) 518-894-0099</p>
+                <p>Email: imtiazither@gmail.com</p>
+                <p>ORCID ID: 0009-0000-2032-297X</p>
+              </div>
+            </header>
+
+            <section class="resume-section">
+              <h4>Profile Summary</h4>
+              <p>
+                AI researcher and applied data scientist specializing in Educational Data
+                Mining (EDM), learning analytics, and fairness-aware machine learning.
+                My research focuses on developing open-source, equity-centered tools,
+                including digital biomarkers for early screening of learning disabilities
+                and transparent Early Warning Systems (EWS). Published researcher with a
+                Best Paper Award (IEEE CS BDC Symposium 2024) and peer-reviewed
+                publications in education and business analytics. Master of Science in
+                Business Analytics (GPA 3.91), Montclair State University.
+              </p>
+            </section>
+
+            <section class="resume-section">
+              <h4>Education</h4>
+              <ul class="resume-list">
+                <li>MS in Business Analytics, Montclair State University, Montclair, NJ, USA.</li>
+                <li>BBA in Management Information System (MIS), North South University, Dhaka, Bangladesh.</li>
+              </ul>
+            </section>
+
+            <section class="resume-section">
+              <h4>Work Experience</h4>
+
+              <div class="resume-entry">
+                <div class="resume-entry__heading">
+                  <div>
+                    <strong>Business Analyst</strong>
+                    <p>Bits and Binaries, Inc, Irving, TX</p>
+                  </div>
+                  <span>February 2026 – Present</span>
+                </div>
+                <ul class="resume-list">
+                  <li>Brainstorm and create customer centric local LLM tools for forecasting sales and reducing lost customer.</li>
+                  <li>Develop, optimize, and maintain complex SQL queries to extract, transform, validate, and predict missing data matrix from multiple relational data sources.</li>
+                  <li>Partner with business stakeholders to elicit, document, and refine reporting and analytics requirements using structured requirement-gathering techniques.</li>
+                  <li>Report User Acceptance Testing (UAT) by validating data logic, resolving discrepancies, and troubleshooting reporting issues.</li>
+                </ul>
+              </div>
+
+              <div class="resume-entry">
+                <div class="resume-entry__heading">
+                  <div>
+                    <strong>Business Analyst</strong>
+                    <p>DCITM LLC, Richmond, VA</p>
+                  </div>
+                  <span>October 2025 – February 2026</span>
+                </div>
+                <ul class="resume-list">
+                  <li>Conducted business analysis by gathering requirements, preparing reports, and assisting in various product launching.</li>
+                  <li>Supported the development of AI Automation of regular internal tasks, including data stacking and data organization for faster and more efficient result.</li>
+                  <li>Supported documentation, workflow evaluation, visualization, and project communication.</li>
+                  <li>Conducted applied research and agentic AI architectures and their applications in automated decision-making pipelines, synthesizing findings from academic literature into actionable internal reports for AI-driven product development.</li>
+                </ul>
+              </div>
+
+              <div class="resume-entry">
+                <div class="resume-entry__heading">
+                  <div>
+                    <strong>Consultant Business Analyst</strong>
+                    <p>NetCom Learning Global, Manhattan, NY</p>
+                  </div>
+                  <span>February 2025 – October 2025</span>
+                </div>
+                <ul class="resume-list">
+                  <li>Co-developed “N+”, an AI-powered adaptive learning application designed to address gaps in AI literacy in professional and academic markets, collaborating cross-functionally on product design, data requirements, and analytics integration.</li>
+                  <li>Developed visualizations for comprehensive analyses of operations, sales, and stakeholder requirements to support data-driven decision-making.</li>
+                  <li>Analyzed marketing datasets and documents using Excel pivot tables and dashboards, identifying patterns, trends, and actionable insights.</li>
+                  <li>Consulted with local professionals and analysed trigger points to make customized learning solution.</li>
+                </ul>
+              </div>
+
+              <div class="resume-entry">
+                <div class="resume-entry__heading">
+                  <div>
+                    <strong>Project Research Assistant</strong>
+                    <p>BacBon Limited, Dhaka, Bangladesh</p>
+                  </div>
+                  <span>January 2019 – March 2022</span>
+                </div>
+                <ul class="resume-list">
+                  <li>Taught English to Japanese High School Students remotely using a platform called SLC, in collaboration with one of their biggest publishing company Shinkoshuppansha Keirinkan Co., Ltd.</li>
+                  <li>Collaborated with Asian Development Bank (ADB) to develop study material in Math and English for junior high school students.</li>
+                  <li>Collaborated and developed with software teams using agile methodologies to optimize platform performance and enhance user experience for “BacBon School” and “BacBon Tutors.”</li>
+                  <li>Oversaw marketing strategies and content creation to boost user engagement, reviewing hundreds of marketing materials and audiovisual content.</li>
+                  <li>Proposed innovative ideas to help reduce marketing expenditure and facilitated seamless international collaboration through reviewing key documents.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="resume-section">
+              <h4>Academic Projects</h4>
+
+              <div class="resume-entry">
+                <div class="resume-entry__heading">
+                  <div>
+                    <strong>Simulation-Based Adaptive Learning Analytics (ALA) Framework</strong>
+                    <p>Montclair State University, Feliciano School of Business, Montclair, NJ</p>
+                  </div>
+                  <span>April 2025</span>
+                </div>
+                <ul class="resume-list">
+                  <li>Developed and documented a simulation-based ALA framework using secondary datasets and computational modeling of community-college enrollment scenarios in collaboration with Illinois State University, Normal, IL.</li>
+                  <li>Applied predictive modeling (logistic regression, random forest, gradient boosting) to forecast student completion, retention, and workforce readiness.</li>
+                  <li>Simulation projections showed adaptive pathways could increase program completion by 18%, raise retention by 15%, and improve workforce-readiness alignment by 12% compared to static curricula.</li>
+                  <li>Demonstrated that embedding adaptive analytics into existing LMS infrastructure enables early identification of at-risk learners without costly curriculum redesign.</li>
+                </ul>
+              </div>
+
+              <div class="resume-entry">
+                <div class="resume-entry__heading">
+                  <div>
+                    <strong>Process Mining with Celonis</strong>
+                    <p>Montclair State University, Feliciano School of Business, Montclair, NJ</p>
+                  </div>
+                  <span>December 2024</span>
+                </div>
+                <ul class="resume-list">
+                  <li>Collaborated on a team to analyze and redesign a complex business process with Celonis software. Identified structural inefficiencies and implemented process changes, enabling concurrency and improved workflows.</li>
+                  <li>Developed insights for process optimization to streamline operations and enhance decision-making capacities.</li>
+                  <li>Got certified by Celonis Academy on “Academic Process Mining Fundamentals.”</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="resume-section resume-section--split">
+              <div>
+                <h4>Conference and Awards</h4>
+                <div class="resume-entry resume-entry--compact">
+                  <div class="resume-entry__heading">
+                    <div>
+                      <strong>IEEE CS BDC Symposium 2024 (Best Paper Award)</strong>
+                      <p>Dhaka, Bangladesh</p>
+                    </div>
+                    <span>November 2024</span>
+                  </div>
+                  <ul class="resume-list">
+                    <li>Optimizing Stroke Prediction Models for Real-World Application: Tackling Data Imbalance Without Synthetic Samples.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <h4>Leadership Experience</h4>
+                <div class="resume-entry resume-entry--compact">
+                  <div class="resume-entry__heading">
+                    <div>
+                      <strong>LAMP (Learn, Act &amp; Make Program)</strong>
+                      <p>Tokyo, Japan</p>
+                    </div>
+                    <span>February 2019</span>
+                  </div>
+                  <ul class="resume-list">
+                    <li>Served as a LAMP young leader, working with other participants to solve socio-economic issues, including market penetration and customer satisfaction challenges for entrepreneurs.</li>
+                    <li>Represented Bangladesh in presentations with social entrepreneurs and participated in volunteer activities.</li>
+                    <li>Engaged with policy experts to learn and develop a forward-thinking mindset to come up with unique solutions for different problems.</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="resume-section">
+              <h4>Publications</h4>
+              <ol class="resume-publications">
+                <li>Zannat, Farzana and Kundu, Tama and Tohfa, Rebeka Islam and Imtiaz, Nafiz and Mahmud, Shadman, Data-Driven Dashboards for Enhancing Investor Reporting Transparency in American Capital Markets (January 08, 2026).</li>
+                <li>Nafiz Imtiaz, Farzana Zannat, Sadia Ahmed, Md Asif Hasan, &amp; Shadman Mahmud. (2025). Leveraging AI for Data-Driven Decision Making and Automation in the USA Education Sector. <em>Journal of Economics, Management &amp; Business Administration</em>, <em>4</em>(1), 87–106.</li>
+                <li>Imtiaz, N., Zannat, F., Vengaladas, M. K., Mahmud, S., &amp; Hasan, M. A. (2025). Transforming Business Analytics: The Impact of Machine Learning on Performance Prediction in US financial sectors. <em>Journal of Business Insight and Innovation</em>, <em>4</em>(1), 61–72.</li>
+                <li>Imtiaz, N., Karim, M. Z. (2023). “Embracing Data-Driven Process Optimization to Highly Transform Instructional Administration in Higher Education Institutions”, Business and Social Sciences, 1(1), 1-8, 10399.</li>
+                <li>Choudhury, P., Imtiaz, N. (2020). “Overcoming Data Excess to Improve Decision-Making and Information Systems Plans for Organizational Performance”, Journal of Primeasia, 1(3), 1-7, 10403.</li>
+              </ol>
+              <p class="resume-sheet__footnote">
+                Google Scholar:
+                <a href="https://scholar.google.com/citations?user=1Bub0coAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">https://scholar.google.com/citations?user=1Bub0coAAAAJ&amp;hl=en</a>
+              </p>
+            </section>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>Copyright &copy; 2026 Nafiz Imtiaz. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
